@@ -4,11 +4,11 @@
 
 Макет страницы:
 ------------
-![alt text](https://github.com/Ruslan131132/users-list/task/menu.png)
+![alt text](https://github.com/Ruslan131132/users-list/blob/master/task/menu.png)
 
 Макет модального окна:
 ------------
-![alt text](https://github.com/Ruslan131132/users-list/task/modal.png)
+![alt text](https://github.com/Ruslan131132/users-list/blob/master/task/modal.png)
 
 
 #### Данные, которые необходимо вывести находятся по пути data/users.js
