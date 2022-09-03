@@ -100,7 +100,7 @@ export default [
     about: "Aenean risus ex. Sed ornare libero, pellentesque platea cursus nisi dictum platea lacinia dapibus ex. Ultricies. Dictum. Sed non tortor, sit non cras ut. Mattis elit. \r\n"
   },
   {
-    _id: "1316468712a123a6d1d31x2",
+    _id: "1316468712a123a6d1d32x2",
     index: 10,
     picture: "https://layout.solvintech.ru/nuxt/api/images/original-11.jpg",
     age: 25,
