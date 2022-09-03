@@ -52,25 +52,27 @@ export default {
 
 <style scoped>
 .wrapper {
-  font-family: Roboto, sans-serif;
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
   justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 70px;
   /*//max-width: 1200px;*/
-  margin-block: 2rem;
-  gap: 2rem;
+  /*margin-block: 2rem;*/
+  /*gap: 35px;*/
 }
 
 img {
   max-width: 100%;
-  height: clamp(20rem, calc(15rem + 2vw), 22rem);
+  height: 210px;
   display: block;
   object-fit: cover;
   object-position: top;
 }
 
 .card__body {
-  padding: 43px 17px;
+  padding: 30px 17px;
   /*display: flex;*/
   /*flex-direction: column;*/
   /*gap: .5rem;*/
@@ -92,4 +94,37 @@ img {
   padding: 1rem;
   margin-top: auto;
 }
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  img {
+    height: 250px;
+  }
+  .card__body {
+    padding: 43px 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1400px) {
+  img {
+    height: 250px;
+  }
+  .card__body {
+    padding: 43px 17px;
+  }
+}
+
+
 </style>
