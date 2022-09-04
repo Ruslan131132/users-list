@@ -8,7 +8,6 @@ export default {
       required: true
     }
   },
-  mounted() {     console.log(this.user);   },
   methods: {
     close() {
       this.$emit('close');
@@ -48,20 +47,6 @@ export default {
           <p><span class="muted">phone: </span>{{ user.phone }}</p>
           <p style="display: flex"><span class="muted">about:&nbsp;</span><span class="big" style="display: inline-block">{{ user.about }}</span></p>
         </div>
-
-<!--        <footer class="modal__footer">-->
-<!--          <slot name="footer">-->
-<!--            This is the default footer!-->
-<!--          </slot>-->
-<!--          <button-->
-<!--            type="button"-->
-<!--            class="btn-green"-->
-<!--            @click="close"-->
-<!--            aria-label="Close modal"-->
-<!--          >-->
-<!--            Close me!-->
-<!--          </button>-->
-<!--        </footer>-->
       </div>
     </div>
   </transition>
@@ -122,6 +107,7 @@ export default {
   bottom: 30px;
   left: 770px;
 }
+
 .modal__btn-close:before, .modal__btn-close:after {
   content: "";
   position: absolute;
@@ -133,9 +119,11 @@ export default {
   border-radius: 1px;
   width: 40px;
 }
+
 .modal__btn-close:before {
   transform: rotate(45deg);
 }
+
 .modal__btn-close:after {
   transform: rotate(-45deg);
 }
@@ -149,4 +137,42 @@ export default {
 .modal-fade-leave-active {
   transition: opacity .5s ease;
 }
+
+@media screen and (max-width: 576px) {
+  .modal {
+    width: 300px;
+    font-size: 14px;
+  }
+  .modal__btn-close {
+    left: 270px;
+  }
+  .modal__image {
+    height: 180px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .modal {
+    width: 400px;
+  }
+  .modal__btn-close {
+    left: 370px;
+  }
+  .modal__image {
+    height: 280px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .modal {
+    width: 600px;
+  }
+  .modal__btn-close {
+    left: 570px;
+  }
+  .modal__image {
+    height: 380px;
+  }
+}
+
 </style>
